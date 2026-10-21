@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<body>
+     <section class="header">
+    <nav>
+      <a href="index.html" id="logo">VERO</a>
+      <div class="nav-links" id="navlinks">
+        <i class="fa fa-xmark" onclick="hidemenu()"></i>
+        <ul>
+          <li><a href="">MEN</a></li>
+          <li><a href="">WOMEN</a></li>
+          <li><a href="">COLLECTIONS</a></li>
+          <li><a href="">NEW ARRIVALS</a></li>
+          <li><a href=""  style="color: #e53935;">SALE</a></li>
+          <li><div class="search">
+            <button id="search"><i class="fa-solid fa-magnifying-glass" style="color: black;"></i> search for products,styles...</button>
+            <div class="bag">
+                 <i class="fa-solid fa-bag-shopping" style="color: black;"></i>
+            </div>
+        </div></li>
+        </ul>
+        </div>
+        
+        
+
+<i class="fa fa-bars" onclick="showmenu()"></i>
+      
+      
+    </nav>
+
+    
+
+
+    <!-- slide home -->
+        <div class="slide">
+
+        <div class="slides" id="slides">
+            <img src="./images/h2.png" alt="Image 1" >
+            <img src="./images/h-men.png" alt="Image 2">
+            <img src="./images/women-h" alt="Image 4">
+            <img src="./images/kids-h" alt="Image 5">
+        </div>
+        <div class="backoverlay">
+    <h1>THE VERO EDIT
+        Dress Beyond Trends.
+    </h1>
+    <p>Discover a world where style meets simplicity. At VERO.</p>
+  </div>
+  
+
+        <button id="slider" class="prev" onclick="prevSlide()"> <i class="fa-solid fa-circle-chevron-left" style="color: black;"></i></button> 
+        <button  id="slider" class="next" onclick="nextSlide()"><i class="fa-solid fa-circle-chevron-right" style="color: black;"></i></button>
+
+    </div>
+
+    
+    
+    </section>
+
+
+
+
+    <!-- 2nd page -->
+
+     <section class="secondpage">
+        <div class="container2">
+            <a href="Sale"><img src="./images/2-1.jpeg" alt=""> <p>Sale</p></a>
+            <a href="All Sale"><img src="./images/2-2.png" alt=""> <p>All sale</p></a>
+            <a href="Festive prints"><img src="./images/2-3.jpeg" alt=""> <p>Festive Prints</p></a>
+            <a href="Men"><img src="./images/men-1.jpeg" alt=""> <p>Men</p></a>
+            <a href="Boys"><img src="./images/kids-3.jpeg" alt=""> <p>Boys</p></a>
+            <a href="women"><img src="./images/women-1.jpeg" alt=""> <p>Women</p></a>
+            <a href="Girls"><img src="./images/kids-4.jpeg" alt=""> <p>Girls</p></a>
+            <a href="Handbags"><img src="./images/2-5.jpeg" alt=""> <p>Hand Bags</p></a>
+
+                </div>
+     </section>
+
+
+
+     <!-- 3rd page -->
+
+
+        
+<section class="shop-section">
+
+    <h1>OUR COLLECTION</h1>
+
+    <div class="category-buttons">
+        <button class="filter-btn active" data-category="all">
+            All Products
+        </button>
+
+        <button class="filter-btn" data-category="men">
+            Men's Wear
+        </button>
+
+        <button class="filter-btn" data-category="women">
+            Women's Wear
+        </button>
+
+        <button class="filter-btn" data-category="kids">
+            Kids' Wear
+        </button>
+    </div>
+
+    <div class="products">
+
+        <div class="product-card" data-category="men">
+            <img src="./images/men-1.jpeg" alt="Men's shirt">
+            <h3>Men's Casual Shirt</h3>
+            <p>₹999</p>
+        </div>
+
+        <div class="product-card" data-category="men">
+            <img src="./images/men-2.jpeg" alt="Men's jacket">
+            <h3>Men's Hoodies</h3>
+            <p>₹1,499</p>
+        </div>
+
+        <div class="product-card" data-category="men">
+            <img src="./images/men-3.jpeg" alt="Men's jacket">
+            <h3>Men's Blazzers</h3>
+            <p>₹1,499</p>
+        </div>
+
+        <div class="product-card" data-category="men">
+            <img src="./images/men-4.jpeg" alt="Men's jacket">
+            <h3>Men's Jeans</h3>
+            <p>₹1,499</p>
+        </div>
+        <!-- women -->
+        <div class="product-card" data-category="women">
+            <img src="./images/women-2.jpeg" alt="Women's dress">
+            <h3>Women's Dress</h3>
+            <p>₹1,299</p>
+        </div>
+
+        <div class="product-card" data-category="women">
+            <img src="./images/women-1.jpeg" alt="Women's top">
+            <h3>Women's Top</h3>
+            <p>₹799</p>
+        </div>
+
+        <div class="product-card" data-category="women">
+            <img src="./images/women-3.jpeg" alt="Women's top">
+            <h3>Women's Blazzers</h3>
+            <p>₹799</p>
+        </div>
+
+        <div class="product-card" data-category="women">
+            <img src="./images/women-4.jpeg" alt="Women's top">
+            <h3>Women's Jeans</h3>
+            <p>₹799</p>
+        </div>
+        <!-- kids -->
+        <div class="product-card" data-category="kids">
+            <img src="./images/kids-1.jpeg" alt="Kids clothing">
+            <h3>Kids' Casual Wear</h3>
+            <p>₹599</p>
+        </div>
+
+        <div class="product-card" data-category="kids">
+            <img src="./images/kids-2.jpeg" alt="Kids outfit">
+            <h3>Kids' Outfit</h3>
+            <p>₹699</p>
+        </div>
+
+        <div class="product-card" data-category="kids">
+            <img src="./images/kids-3.jpeg" alt="Kids outfit">
+            <h3>Kids' Outfit</h3>
+            <p>₹699</p>
+        </div>
+
+        <div class="product-card" data-category="kids">
+            <img src="./images/kids-4.jpeg" alt="Kids outfit">
+            <h3>Kids' Outfit</h3>
+            <p>₹699</p>
+        </div>
+
+    </div>
+    <div class="productbutton">
+        <button>Explore all</button>
+    </div>
+
+</section>
+
+<!-- 4th-page -->
+
+<section class="fourthpage">
+    <div class="container4">
+       <a href=""> <img src="./images/4th-1-removebg-preview.png" alt=""><p>Free Alteration</p></a>
+        <a href=""><img src="./images/4th-2-removebg-preview.png" alt=""><p>4 hrs Delivery*</p></a>        
+        <a href=""><img src="./images/4th-3-removebg-preview.png" alt=""><p>Hassle-free Returns</p></a>
+        <a href=""><img style="height: 120px; margin-top: 20px;margin-bottom: 10px;" src="./images/4th-4-removebg-preview.png" alt=""><p>Endless Options</p></a>
+    </div>
+</section>
+
+
+<!-- advertisement -->
+
+<section class="ad">
+    <div class="poster">
+        <img src="./images/ad-1st.png" alt="">
+        <img src="./images/ad-2nd.png" alt="">
+    </div>
+</section>
+
+<!-- testimonials -->
+    <section class="testimonials">
+    <h1>what our Client says</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ut iusto quae, minima repudiandae optio.</p>
+  
+    <div class="row">
+      <div class="testimonial-col">
+        <img src="images/user1.jpg" alt="">
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsam nulla deleniti, corrupti dolorum velit nesciunt illo. Commodi, cupiditate iste!</p>
+          <h3>christan</h3>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+          
+        </div>
+      </div>
+       <div class="testimonial-col">
+        <img src="images/user2.jpg" alt="">
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsam nulla deleniti, corrupti dolorum velit nesciunt illo. Commodi, cupiditate iste!</p>
+          <h3>david</h3>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+          <i class="fa fa-star" ></i>
+
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+  <!-- locate -->
+   <section class="location">
+    <div class="logo">
+        <img src="./images/logo.png" alt="">
+    </div>
+    <div class="locate">
+        <h2>LOCATE</h2>
+        <h2>VERO STORE</h2>
+    </div>
+    <div class="box">
+        <p>Find a Store</p>
+        <input type="text" placeholder="Enter Your Pincode/City/Area"><a href="">Show Me</a>
+    </div>
+   </section>
+
+   <!-- feature -->
+   <section class="feature">
+    <img src="./images/chipping-removebg-preview.png" alt="">
+    <img src="./images//return-removebg-preview.png" alt="">
+    <img src="./images/delivery-removebg-preview.png" alt="">
+   </section>
+
+
+   <!-- footer -->
+
+   
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Need Help -->
+        <div class="footer-column">
+            <h4>NEED HELP?</h4>
+            <a href="#">Order Status</a>
+            <a href="#">Delivery</a>
+            <a href="#">Returns</a>
+            <a href="#">FAQs</a>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Return And Cancellation Policy</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <!-- About Us -->
+        <div class="footer-column">
+            <h4>ABOUT US</h4>
+            <a href="#">Our Story</a>
+            <a href="#">Find A Store</a>
+            <a href="#">Vero Store Blog</a>
+            <a href="#">Terms And Conditions</a>
+            <a href="#">Bulk Order</a>
+        </div>
+
+        <!-- Newsletter and Social -->
+        <div class="footer-right">
+
+            <h4>♧ JOIN THE VERO STORE COMMUNITY</h4>
+
+            <form class="newsletter">
+                <input type="text"
+                    placeholder="Enter your e-mail / mobile number"
+                    required>
+
+                <button type="submit">→</button>
+            </form>
+
+            <p class="newsletter-text">
+                Sign up for updates on the latest collections,
+                campaigns and offers.
+            </p>
+
+            <div class="social-section">
+                <h4>FIND US ON SOCIAL</h4>
+
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="X">𝕏</a>
+                    <a href="#" aria-label="Instagram">◎</a>
+                    <a href="#" aria-label="YouTube">▶</a>
+                    <a href="#" aria-label="LinkedIn">in</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 VERO STORE. ALL RIGHTS RESERVED.
+    </div>
+</footer>
+
+
+
+     
+
+  
+
+
+<script>
+
+    // nav
+    
+    
+var navlinks = document.getElementById("navlinks");
+
+function showmenu() {
+    navlinks.style.right = "0";
+}
+
+function hidemenu() {
+    navlinks.style.right = "-200px";
+}
+
+    
+
+    
+
+      
+
+        let index = 0;
+
+        let slides = document.querySelector("#slides");
+
+        let total = slides.children.length;
+
+
+        function showslide() {
+            slides.style.transform = "translateX(-"+ index * 100 +"%)";
+         }
+
+         function nextSlide() {
+            index++;
+            if(index == total){
+                index = 0;
+            }
+            showslide();
+         }
+
+         function prevSlide(){
+            index--;
+            if (index < 0 ){
+                index = total- 1;
+            }
+            showslide();
+         }
+         setInterval(nextSlide,5000);
+
+
+        
+    
+const filterButtons = document.querySelectorAll(".filter-btn");
+const products = document.querySelectorAll(".product-card");
+
+filterButtons.forEach(function(button) {
+
+    button.addEventListener("click", function() {
+
+        // Active button change
+        filterButtons.forEach(function(btn) {
+            btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        // Selected category
+        const category = button.dataset.category;
+
+        // Filter products
+        products.forEach(function(product) {
+
+            if (
+                category === "all" ||
+                product.dataset.category === category
+            ) {
+                product.style.display = "block";
+            } else {
+                product.style.display = "none";
+            }
+
+        });
+
+    });
+
+});
+
+
+
+</script>
+
+    
+</body>
+</html>
