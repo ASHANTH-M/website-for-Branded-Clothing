@@ -284,7 +284,7 @@ body {
     }
     .backoverlay p {
         font-size: 19px;
-        margin-top: 20px;
+        margin-top: 50px;
         width: 280px;
         color: #F2F2ED;
         text-align: center;
@@ -327,7 +327,7 @@ body {
     .container2{
         margin-left:20px
     .container2 img{
-        height: 120px;
+        height: 90px;
     }
 }
 /* 3rd page */
@@ -546,7 +546,7 @@ body {
 }
 @media (max-width:700px){
     .testimonial-col{
-        margin-left: 5px;
+        margin-left: 10px;
         /* background-color: black; */
         width: 80%;
     
@@ -717,7 +717,7 @@ body {
     
     .box a{
         margin: 0;
-        margin-left: 100px;
+        margin-left: 130px;
         
     }
     .box{
