@@ -284,7 +284,7 @@ body {
     }
     .backoverlay p {
         font-size: 19px;
-        margin-top: 40px;
+        margin-top: 20px;
         width: 280px;
         color: #F2F2ED;
         text-align: center;
@@ -324,6 +324,8 @@ body {
     text-decoration: none;
 }
 @media(max-width:700px){
+    .container2{
+        margin-left:20px
     .container2 img{
         height: 120px;
     }
@@ -525,7 +527,7 @@ body {
 }
 .testimonial-col p{
     text-align: justify;
-    width: 400px;
+    width: 500px;
     padding: 0;
 }
 .testimonial-col h3{
@@ -543,6 +545,13 @@ body {
     margin-top: 50px;
 }
 @media (max-width:700px){
+    .testimonial-col{
+        margin-left: 5px;
+        /* background-color: black; */
+        width: 80%;
+    
+        
+    }
   .testimonial-col img{
   margin-left: 0px;
   margin-right: 15px;
@@ -565,6 +574,7 @@ body {
 }
 
 .poster img {
+    border-radius:10px
     cursor: pointer;
     width: 600px;
     height: 750px;
@@ -704,9 +714,14 @@ body {
     .box input{
         margin: 5px;
     }
+    
     .box a{
         margin: 0;
-        margin-left: 120px;
+        margin-left: 100px;
+        
+    }
+    .box{
+        margin-left: 20px;
         
     }
 }
