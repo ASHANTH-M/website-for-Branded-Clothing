@@ -285,6 +285,7 @@ body {
     .backoverlay p {
         font-size: 19px;
         margin-top: 20px;
+        margin-left:10px;
         width: 280px;
         color: #F2F2ED;
         text-align: center;
