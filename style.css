@@ -288,7 +288,7 @@ body {
         width: 280px;
         color: #F2F2ED;
         text-align: center;
-        text-align: justify;
+        /* text-align: justify; */
         
     }
     .backoverlay{
